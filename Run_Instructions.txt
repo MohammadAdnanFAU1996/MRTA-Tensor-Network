@@ -1,0 +1,78 @@
+MRTA Tensor-Network Project - RUN INSTRUCTIONS
+
+========================================
+1. OPEN POWERHELL
+========================================
+
+cd C:\Users\Adnan\Desktop\MRTA_TensorNetwork
+
+========================================
+2. CREATE VIRTUAL ENVIRONMENT (FIRST TIME ONLY)
+========================================
+
+python -m venv venv
+
+========================================
+3. ACTIVATE ENVIRONMENT
+========================================
+
+.\venv\Scripts\Activate.ps1
+
+If blocked, run:
+
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+Then activate again:
+
+.\venv\Scripts\Activate.ps1
+
+========================================
+4. INSTALL REQUIREMENTS
+========================================
+
+pip install -r requirements.txt
+
+========================================
+5. RUN V1 (BASELINE)
+========================================
+
+python v1\mrta_v1.py
+
+========================================
+6. RUN V2 (ENERGY MODEL)
+========================================
+
+python v2\mrta_v2.py
+
+========================================
+7. RUN V3 (SCALABLE VERSION)
+========================================
+
+python v3\mrta_v3.py
+
+========================================
+EXPECTED OUTPUT
+========================================
+
+- MRTA cost matrix printed
+- Tensor-network state generated
+- Best assignment returned
+- Runtime shown (V3 only)
+
+========================================
+ORDER OF EXECUTION
+========================================
+
+Run in this order:
+
+V1 → V2 → V3
+
+========================================
+COMMON ERRORS
+========================================
+
+If quimb missing:
+pip install quimb
+
+If execution policy error:
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
