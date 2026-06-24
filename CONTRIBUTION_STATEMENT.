@@ -1,0 +1,8 @@
+This work presents a progressive experimental framework for Multi-Robot Task Allocation (MRTA) 
+using tensor-network simulation of quantum optimization circuits.
+The implemented V1–V3 pipeline establishes a baseline MRTA solver, introduces an energy-based formulation, 
+and extends to scalable stochastic optimization using simulated annealing. While current implementations provide a 
+foundational tensor-network encoding and approximate optimization framework, the proposed future extensions
+aim to explicitly characterize MRTA structural properties influencing tensor-network contraction complexity, 
+investigate dynamic MRTA updates under incremental changes, and evaluate the reliability of 
+approximate tensor-network simulation in producing high-quality allocation decisions.
