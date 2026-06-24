@@ -1,0 +1,36 @@
+# Technical Documentation
+
+## Overview
+
+This project models MRTA as a combinatorial optimization problem.
+
+We use tensor-network-inspired quantum circuits (via quimb) to encode structure.
+
+## V1
+
+- Exact brute-force solver
+- Baseline correctness model
+- Tensor network used only for representation
+
+## V2
+
+- Introduces energy function:
+  - Classical cost
+  - Constraint penalty
+  - Nonlinear tensor modulation
+- Still uses exact search
+
+## V3
+
+- Scales to N robots/tasks
+- Uses simulated annealing
+- Approximate optimization method
+- Measures runtime performance
+
+## Tensor Network Role
+
+Tensor networks encode MRTA structure using:
+- Hadamard gates
+- Rotation gates (RY)
+
+Library: quimb
